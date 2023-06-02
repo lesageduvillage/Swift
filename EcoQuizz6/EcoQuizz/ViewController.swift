@@ -201,7 +201,7 @@ class QuestionViewController : UIViewController, UICollectionViewDataSource, UIC
             labelController.Date = questions[indexPath.row].date
             labelController.Question = questions[indexPath.row].sentence
             labelController.Answer = questions[indexPath.row].correct
-            labelController.Explain = questions[indexPath.row].explain
+            labelController.Explain = questions[indexPath.row].explain == nil ? "" : questions[indexPath.row].explain
             labelController.title = questions[indexPath.row].title
             let backItem = UIBarButtonItem()
                 backItem.title = "Quizz"
